@@ -1,0 +1,191 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #131313; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
+    /* max-width: 70%; */
+}
+
+#dash{
+ text-align: center;
+ color: #131313;
+}
+
+header {
+    background: #0466c8; 
+    /* background: #130123; */
+    color: #e0e0e0; /* Light text */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px 1d2d44;
+    width: 97.5%;
+    position: relative;
+}
+
+header select {
+    padding: 5px;
+    background-color: #22223b;
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #444; /* Subtle border */
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column; /* Stack dashboard buttons and dynamic content */
+    padding: 20px;
+    height: calc(100vh - 60px); /* Adjust height considering header height */
+    /* background: #edede9;  */
+    background: #f6f6f6;
+    color: #e0e0e0; /* Light text */
+    overflow-y: auto; /* Enable vertical scroll if content overflows */
+}
+
+/* Dashboard Buttons Section */
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333; /* Dark button */
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #444; /* Subtle border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-buttons button:hover {
+    background: #444; /* Slightly lighter on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Footer */
+footer {
+    background: #333; /* Dark footer */
+    color: #e0e0e0; /* Light text */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer a {
+    color: #80c7ff; /* Light blue footer link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .dashboard-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-buttons button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+
+
+.dashboard-welcome {
+    /* background: #2c3e50; */
+    /* color: #ecf0f1; */
+    color: #130123;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dashboard-info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.info-card {
+    /* background: #34495e; */
+    background: #678dab;
+    color: #ecf0f1;
+    /* color: #130123; */
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+}
+
+.info-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 16px;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    margin: 10px 0;
+}
+
+.info-card button {
+   
+    /* background:#118ab2; */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.info-card button:hover {
+    background: #d6d6d6;
+}
+
+.dashboard-footer {
+    /* background: #2c3e50; */
+    color: #000709;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.dashboard-footer a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.dashboard-footer a:hover {
+    text-decoration: underline;
+}
+
